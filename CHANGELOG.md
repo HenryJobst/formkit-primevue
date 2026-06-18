@@ -1,3 +1,19 @@
+## v4.3.0
+
+[compare changes](https://github.com/sfxcode/formkit-primevue/compare/v4.2.4...v4.3.0)
+
+### 💅 Refactors
+
+- Move `t` function declaration outside computed property in PrimeOutputText component ([ff36f537](https://github.com/sfxcode/formkit-primevue/commit/ff36f537))
+
+### 🏡 Chore
+
+- Update release script to use minor version bump ([9c29ec9c](https://github.com/sfxcode/formkit-primevue/commit/9c29ec9c))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v4.2.4
 
 [compare changes](https://github.com/sfxcode/formkit-primevue/compare/v4.2.3...v4.2.4)
