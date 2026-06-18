@@ -23,9 +23,10 @@ const props = defineProps({
   },
 })
 
+const { t } = useI18n()
+
 const textValue = computed(() => {
   const value = props.context?._value
-  const { t } = useI18n()
   let result = ''
   if (value) {
     if (props.context?.isTranslationKey) {
