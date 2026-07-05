@@ -53,7 +53,7 @@ export const primeRepeaterDefinition: FormKitTypeDefinition = createInput(
           onDragend: '$dragNodeEnd',
         }),
       ], true, {}),
-    ], true, 'true'),
+    ], true, 'true', { value: '$value' }),
   ], { class: '$internalListClass', id: '$internalListId' }, true),
   {
     props: ['insertButtonLabel', 'insertButtonClass', 'insertButtonSize', 'alwaysDisplayInsertButton', 'newItem', 'listClass', 'listItemClass', 'hideButtonGroup', 'hideMoveButtons', 'buttonGroupClass', 'buttonGroupItemClass', 'buttonSize', 'displayCloneButton', 'displayAddButton', 'displayDeleteButton', 'minItems', 'maxItems', 'displayDragHandle', 'draggable', 'dragHandleClass', 'dragHandleIconClass'],
