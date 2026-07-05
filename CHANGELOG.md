@@ -1,3 +1,19 @@
+## v4.3.1
+
+[compare changes](https://github.com/sfxcode/formkit-primevue/compare/v4.3.0...v4.3.1)
+
+### 🩹 Fixes
+
+- Existing initial values were not rendered ([11e03737](https://github.com/sfxcode/formkit-primevue/commit/11e03737))
+
+### 🏡 Chore
+
+- Update release script to use patch version bump instead of minor ([6339e0ea](https://github.com/sfxcode/formkit-primevue/commit/6339e0ea))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v4.3.0
 
 [compare changes](https://github.com/sfxcode/formkit-primevue/compare/v4.2.4...v4.3.0)
