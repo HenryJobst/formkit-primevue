@@ -1,3 +1,16 @@
+## v4.3.2
+
+[compare changes](https://github.com/sfxcode/formkit-primevue/compare/v4.3.1...v4.3.2)
+
+### 🏡 Chore
+
+- Update README and pin PrimeVue dependencies to the last MIT-licensed versions ([ca8e41d6](https://github.com/sfxcode/formkit-primevue/commit/ca8e41d6))
+- Clean up `pnpm ([019a8df8](https://github.com/sfxcode/formkit-primevue/commit/019a8df8))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v4.3.1
 
 [compare changes](https://github.com/sfxcode/formkit-primevue/compare/v4.3.0...v4.3.1)
