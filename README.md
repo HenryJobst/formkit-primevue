@@ -8,9 +8,9 @@ In addition, you can use the same pattern for **data output** from **schema** us
 
 ## PrimeVue Versions
 
-Actual PrimeVue Version of the main branch is *4.x.*
+Actual PrimeVue Version of the main branch is *4.5.5.*
 
-PrimeVue 3 is in the prime3 branch, but future development will only focus on PrimeVue 4
+This is the last version of the 4.x branch. Starting with [PrimeVue's "Next Chapter"](https://primeui.dev/nextchapter), newer versions are no longer open source, so 5.x and later will not be supported. Dependency overrides pin PrimeVue-related packages to their last MIT-licensed versions.
 
 ## Build
 
