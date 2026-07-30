@@ -43,6 +43,17 @@ export default defineConfig({
       'vue-demi',
     ],
   },
+  build: {
+    // Rolldown's automatic chunk-splitting can place shared runtime helpers
+    // (e.g. __exportAll) in a chunk that circularly imports back from another
+    // chunk, leaving the helper undefined at call time ("e is not a function").
+    // Disabling code-splitting avoids that class of bug for this demo build.
+    rolldownOptions: {
+      output: {
+        codeSplitting: false,
+      },
+    },
+  },
   plugins: [
     Unocss({
       configFile: './dev/uno.config.ts',
