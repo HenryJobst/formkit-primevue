@@ -2,7 +2,7 @@
 import { useFormKitSchema } from 'my-library'
 
 const primeAttributes = ''
-const customAttributes = 'iconPrefix, prefix, suffix, iconSuffix'
+const customAttributes = 'iconPrefix, prefix, suffix, iconSuffix, iconPrefixTooltip, iconSuffixTooltip'
 const { addElement } = useFormKitSchema()
 
 function convertValues(value: string[]): string[] {
@@ -38,6 +38,16 @@ const schema
       label: 'Custom Divider with Prefix Icon',
       iconPrefix: 'pi pi-list',
       divider: ' - ',
+    },
+    {
+      $formkit: 'primeOutputList',
+      name: 'list2',
+      label: 'Icon Tooltips',
+      help: 'Hover the icons to see the tooltips',
+      iconPrefix: 'pi pi-list',
+      iconPrefixTooltip: 'Item list',
+      iconSuffix: 'pi pi-info-circle',
+      iconSuffixTooltip: 'Additional information',
     },
     addElement('h3', ['Converter']),
 

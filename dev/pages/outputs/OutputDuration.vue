@@ -1,6 +1,6 @@
 <script setup lang='ts'>
 const primeAttributes = ''
-const customAttributes = 'iconPrefix, prefix, suffix, iconSuffix'
+const customAttributes = 'iconPrefix, prefix, suffix, iconSuffix, iconPrefixTooltip, iconSuffixTooltip'
 
 function prefixClicked() {
   console.error('Prefix Icon Clicked')
@@ -23,7 +23,15 @@ const schema
       name: 'duration3',
       label: 'Another Duration',
       iconPrefix: 'pi pi-check',
+      iconPrefixTooltip: 'Duration verified',
       onIconPrefixClicked: prefixClicked,
+    },
+    {
+      $formkit: 'primeOutputDuration',
+      name: 'duration3',
+      label: 'Icon Right with Tooltip',
+      iconSuffix: 'pi pi-clock',
+      iconSuffixTooltip: 'Elapsed time',
     },
 
   ]

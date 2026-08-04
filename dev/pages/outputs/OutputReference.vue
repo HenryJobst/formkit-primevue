@@ -1,6 +1,6 @@
 <script setup lang='ts'>
 const primeAttributes = ''
-const customAttributes = 'iconPrefix, prefix, suffix, iconSuffix'
+const customAttributes = 'iconPrefix, prefix, suffix, iconSuffix, iconPrefixTooltip, iconSuffixTooltip'
 
 const schema
   = [
@@ -31,6 +31,17 @@ const schema
       internal: true,
       title: 'Show: {{value}}',
       reference: '/outputs/{{value}}',
+    },
+    {
+      $formkit: 'primeOutputReference',
+      name: 'externalId',
+      label: 'Icon Tooltips',
+      help: 'Hover the icons to see the tooltips',
+      reference: 'https://github.com/sfxcode/{{value}}',
+      iconPrefix: 'pi pi-github',
+      iconPrefixTooltip: 'View on GitHub',
+      iconSuffix: 'pi pi-arrow-up-right',
+      iconSuffixTooltip: 'Opens externally',
     },
 
   ]

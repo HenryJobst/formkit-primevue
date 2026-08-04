@@ -1,6 +1,6 @@
 <script setup lang='ts'>
 const primeAttributes = ''
-const customAttributes = 'iconPrefix, prefix, suffix, iconSuffix'
+const customAttributes = 'iconPrefix, prefix, suffix, iconSuffix, iconPrefixTooltip, iconSuffixTooltip'
 
 const schema
   = [
@@ -47,6 +47,16 @@ const schema
       if: '!$falseValue',
       falseValue: '',
       iconSuffix: 'pi pi-minus',
+    },
+    {
+      $formkit: 'primeOutputBoolean',
+      name: 'trueValue',
+      label: 'Icon Tooltips',
+      help: 'Hover the icons to see the tooltips',
+      iconPrefix: 'pi pi-info-circle',
+      iconPrefixTooltip: 'Status information',
+      iconSuffix: 'pi pi-check',
+      iconSuffixTooltip: 'Confirmed',
     },
   ]
 

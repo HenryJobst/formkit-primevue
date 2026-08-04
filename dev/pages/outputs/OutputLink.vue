@@ -1,6 +1,6 @@
 <script setup lang='ts'>
 const primeAttributes = ''
-const customAttributes = 'iconPrefix, prefix, suffix, iconSuffix'
+const customAttributes = 'iconPrefix, prefix, suffix, iconSuffix, iconPrefixTooltip, iconSuffixTooltip'
 
 const schema
   = [
@@ -14,6 +14,16 @@ const schema
       name: 'link2',
       label: 'Ensure protocol and use custom title',
       title: 'Click me',
+    },
+    {
+      $formkit: 'primeOutputLink',
+      name: 'link1',
+      label: 'Icon Tooltips',
+      help: 'Hover the icons to see the tooltips',
+      iconPrefix: 'pi pi-external-link',
+      iconPrefixTooltip: 'Opens in a new tab',
+      iconSuffix: 'pi pi-info-circle',
+      iconSuffixTooltip: 'External resource',
     },
 
   ]

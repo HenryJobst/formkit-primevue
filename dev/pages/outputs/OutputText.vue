@@ -1,6 +1,6 @@
 <script setup lang='ts'>
 const primeAttributes = ''
-const customAttributes = 'iconPrefix, prefix, suffix, iconSuffix, maxLength'
+const customAttributes = 'iconPrefix, prefix, suffix, iconSuffix, iconPrefixTooltip, iconSuffixTooltip, maxLength'
 
 function prefixClicked() {
   console.error('Prefix Icon Clicked')
@@ -45,6 +45,7 @@ const schema
       label: 'Icon Left',
       help: '',
       iconPrefix: 'pi pi-check',
+      iconPrefixTooltip: 'Verified',
       onIconPrefixClicked: prefixClicked,
     },
     {
@@ -53,6 +54,7 @@ const schema
       label: 'Icon Right',
       help: 'Right Icon Demo',
       iconSuffix: 'pi pi-check text-yellow-500',
+      iconSuffixTooltip: 'All good',
       onIconSuffixClicked: suffixClicked,
     },
     {
