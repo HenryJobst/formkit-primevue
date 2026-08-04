@@ -34,7 +34,7 @@ const title = computed(() => {
 
 <template>
   <div class="p-formkit p-output-reference">
-    <FormKitIcon v-if="hasPrefixIcon" :icon-class="context?.iconPrefix as string" :on-click="context?.onIconPrefixClicked as (() => void)" position="prefix" />
+    <FormKitIcon v-if="hasPrefixIcon" :icon-class="context?.iconPrefix as string" :on-click="context?.onIconPrefixClicked as (() => void)" :tooltip="context?.iconPrefixTooltip as string" position="prefix" />
     <FormKitPrefix v-if="hasPrefix" :prefix="context?.prefix as string" />
     <component
       :is="context?.linkComponentName ? context?.linkComponentName : 'RouterLink'"
@@ -57,6 +57,6 @@ const title = computed(() => {
       {{ title }}
     </a>
     <FormKitSuffix v-if="hasSuffix" :suffix="context?.suffix as string" />
-    <FormKitIcon v-if="hasSuffixIcon" :icon-class="context?.iconSuffix as string" :on-click="context?.onIconSuffixClicked as (() => void)" position="suffix" />
+    <FormKitIcon v-if="hasSuffixIcon" :icon-class="context?.iconSuffix as string" :on-click="context?.onIconSuffixClicked as (() => void)" :tooltip="context?.iconSuffixTooltip as string" position="suffix" />
   </div>
 </template>

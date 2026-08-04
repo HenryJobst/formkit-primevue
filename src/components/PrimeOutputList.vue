@@ -55,6 +55,7 @@ const listItemsClass = computed(() => props.context?.attrs?.class || '')
       v-if="hasPrefixIcon"
       :icon-class="context?.iconPrefix as string"
       :on-click="context?.onIconPrefixClicked as () => void"
+      :tooltip="context?.iconPrefixTooltip as string"
       position="prefix"
     />
     <FormKitPrefix v-if="hasPrefix && listStyle === 'span'" :prefix="context?.prefix as string" />
@@ -116,6 +117,7 @@ const listItemsClass = computed(() => props.context?.attrs?.class || '')
       v-if="hasSuffixIcon"
       :icon-class="context?.iconSuffix as string"
       :on-click="context?.onIconSuffixClicked as () => void"
+      :tooltip="context?.iconSuffixTooltip as string"
       position="suffix"
     />
   </div>

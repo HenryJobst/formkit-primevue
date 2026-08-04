@@ -4,6 +4,8 @@ import type { PropType } from 'vue'
 export interface FormKitIconProps {
   onIconPrefixClicked?: () => void
   onIconSuffixClicked?: () => void
+  iconPrefixTooltip?: string
+  iconSuffixTooltip?: string
 }
 
 defineProps({
@@ -17,9 +19,13 @@ defineProps({
     required: true,
     validator: (val: string) => ['prefix', 'suffix'].includes(val),
   },
+  tooltip: {
+    type: String,
+  },
 })
 </script>
 
 <template>
-  <i :class="[`formkit-${position}-icon`, iconClass]" @click="onClick" />
+  <i v-if="tooltip && tooltip?.length > 0" v-tooltip.bottom="tooltip" :class="[`formkit-${position}-icon`, iconClass]" @click="onClick" />
+  <i v-else :class="[`formkit-${position}-icon`, iconClass]" @click="onClick" />
 </template>
