@@ -1,3 +1,21 @@
+## v4.3.3
+
+[compare changes](https://github.com/sfxcode/formkit-primevue/compare/v4.3.2...v4.3.3)
+
+### 🚀 Enhancements
+
+- Add tooltip support for icon prefix and suffix in FormKit components ([f25289e5](https://github.com/sfxcode/formkit-primevue/commit/f25289e5))
+- Add tooltip demos for icons in Output components ([94973eeb](https://github.com/sfxcode/formkit-primevue/commit/94973eeb))
+
+### 🏡 Chore
+
+- Disable code-splitting in demo build to avoid runtime helper issues ([19cf627c](https://github.com/sfxcode/formkit-primevue/commit/19cf627c))
+- Update dependencies in package.json ([e224d329](https://github.com/sfxcode/formkit-primevue/commit/e224d329))
+
+### ❤️ Contributors
+
+- Sfxcode ([@sfxcode](https://github.com/sfxcode))
+
 ## v4.3.2
 
 [compare changes](https://github.com/sfxcode/formkit-primevue/compare/v4.3.1...v4.3.2)
